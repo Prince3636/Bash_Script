@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Read single value
+# Input on same line 
 read -p "Enter your name: " name
 echo "Name is: $name"
 
