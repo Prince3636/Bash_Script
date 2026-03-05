@@ -6,28 +6,31 @@
 # Description : Learning how Bash
 # -----------------------------------
 
-# count=10
+# For Numeric
+read -p "Enter a number: " count
 
-# if [ $count -ne 0 ]
-# then 
-#    echo "conditon is true"
-# fi
-
-
-word=a
-
-if [[ $word < "b" ]]
-then 
-   echo "conditon a is true"
-elif [[ $word < "a" ]]
-then 
-   echo "conditon b is true"
+if [ "$count" -eq 0 ];
+then
+    echo "Number is zero"
+elif [ "$count" -gt 0 ]; 
+then
+    echo "Number is positive"
 else
-   echo "conditon is false"
+    echo "Number is negative"
 fi
 
 
+# For alphabet
 
+read -p "Enter a single char: " char
+
+if [[ "$char" == "a" ]]; then
+    echo "Character is equal to 'a'"
+elif [[ "$char" > "a" ]]; then
+    echo "Character is greater than 'a'"
+else
+    echo "Character is smaller than 'a'"
+fi
 
 # Expressions 
 # An expression can be: String comparison, Numeric comparison, File operators and Logical operators and it is represented by [expression]:
