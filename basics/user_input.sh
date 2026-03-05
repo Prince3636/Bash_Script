@@ -13,6 +13,7 @@ read -sp "Password: " pass
 echo
 echo "Username: $user"
 echo "Password entered successfully"
+echo "Password is : " $pass
 
 echo
 
